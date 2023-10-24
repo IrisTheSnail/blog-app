@@ -1,9 +1,5 @@
-import { deleteUserService, userValidation } from '../services/user';
-import { getUserService } from '../services/user';
-import { changeUsername } from '../services/user';
-import { changePassword } from '../services/user';
-import { getSpecificUserService } from '../services/user';
 import { Router } from 'express';
+import * as Service from "../services/user";
 
 
 export const router = Router();
@@ -15,17 +11,19 @@ router.post("/user", (req, res) => {
     let parsing = JSON.parse(data);
     
     try{
-        userValidation(parsing);
+        Service.addUser(parsing);
     } catch {(err : Error) => console.error(err)} //we both know this is wrong 
     // finally{res.status(401).send("User not added");}
 
     res.status(201).send("User added successfully!");
 })
+
+//is this the literal signup? can it be just used as such?
     
 
 router.get("/user", async (req, res) => {
 
-    let r =  await getUserService();
+    let r =  await Service.getUserService();
 
     res.status(200).json(r);
 }
@@ -34,13 +32,11 @@ router.get("/user", async (req, res) => {
 router.patch("/user/:id", (req, res) => {
     
     const id = req.params.id;
-    const newUsername : string | undefined = req.body.username;
-    const newPassword : string | undefined = req.body.password;
+    const newUsername : string = req.body.username;
+    const newPassword : string = req.body.password;
     if(newUsername){
         try{
-            console.log("the id : "  +  id + "\n");
-            console.log(newUsername);
-            changeUsername(id , newUsername);
+            Service.changeUsername(id , newUsername);
         }catch{(err : Error) => {console.log(err);}}
         res.status(201).send("user username updated successfully");
 
@@ -49,7 +45,7 @@ router.patch("/user/:id", (req, res) => {
         try{
             console.log("the id : "  +  id + "\n");
             console.log(newPassword);
-            changePassword(id, newPassword);
+            Service.changePassword(id, newPassword);
         }catch{(err : Error) => {console.log(err);}}
         res.status(201).send("user password updated successfully");
 
@@ -57,21 +53,20 @@ router.patch("/user/:id", (req, res) => {
     
     
 });
-//so a user want to either change his username or his password.... he can't change the email
-
-//i should implement get specific user after this 
+//so a user wants to either change his username or his password.... he can't change the email
 
 router.get("/user/:id", async (req, res) => {
 
     const id = req.params.id;
-    let r =  await getSpecificUserService(id);
+    let r =  await Service.getSpecificUserId(id);
 
     res.status(200).json(r);
 });
 
 router.delete("/user/:id", async (req, res) => {
     const id = req.params.id;
-    deleteUserService(id);
+    Service.deleteUser(id);
 
     res.status(201).send("user "+ id + " deleted successfully");
 });
+

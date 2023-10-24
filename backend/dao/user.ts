@@ -5,7 +5,6 @@ export const selectAllUsers = async () => {
 
     return pool.query('SELECT * FROM users');
     
-
 }
 
 export const insertUser = (InsertUser : User) => {
@@ -34,10 +33,14 @@ export const UpdateUserPassword = (id : string, newPassword : { salt: string; pa
     })
 };
 
-export const selectUser = async (id : string) => {
+export const selectUserById = async (id : string) => {
     return pool.query('SELECT * FROM users WHERE id = $1', [id]);
 };
 
 export const deleteUser = async (id : string) => {
     return pool.query("DELETE FROM users WHERE id = $1", [id]);
+};
+
+export const selectUserByEmail = async (email : string) => {
+    return await pool.query('SELECT * FROM users WHERE email = $1', [email]);
 };

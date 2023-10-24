@@ -1,6 +1,6 @@
 import crypto from 'crypto';
 
-var genRandomString = function(length : number){
+export var genRandomString = function(length : number){
   return crypto.randomBytes(Math.ceil(length/2))
   .toString('hex')
   .slice(0,length);
@@ -16,8 +16,7 @@ var sha512 = function(password : any, salt : any){
   };
 };
 
-export function saltHashPassword(userpassword : any) {
-  var salt = genRandomString(16);
+export function saltHashPassword(userpassword : any, salt : any) {
   var passwordData = sha512(userpassword, salt);
   // console.log('Passwordhash = '+passwordData.passwordHash);
   // console.log('\nSalt = '+passwordData.salt);

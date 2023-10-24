@@ -1,14 +1,14 @@
-import { deleteUser, insertUser, selectAllUsers, selectUser, UpdateUsername, UpdateUserPassword } from "../dao/user";
+import  * as dao from "../dao/user";
 import User from "../types/users.types";
 import { emailValidation } from "../utils/emailValid";
 import { genUUID } from "../utils/genUUID";
 import { saltHashPassword } from "../utils/hash";
+import { currentServerSalt } from "../server";
 
 
+export const addUser = (parsedUser: { password: string; username: string; email: string; }) : boolean => {
 
-export const userValidation = (parsedUser: { password: string; username: string; email: string; }) : boolean => {
-
-    let hash_salt = saltHashPassword(parsedUser.password);
+    let hash_salt = saltHashPassword(parsedUser.password, currentServerSalt);
 
     if(emailValidation(parsedUser.email)){
 
@@ -17,10 +17,10 @@ export const userValidation = (parsedUser: { password: string; username: string;
             username: parsedUser.username,
             email: parsedUser.email,
             hash : hash_salt.passwordHash,
-            salt : hash_salt.salt,	
+            salt : hash_salt.salt,
         }
 
-        insertUser(insertThisUser);
+        dao.insertUser(insertThisUser);
 
         return true;
 
@@ -29,23 +29,27 @@ export const userValidation = (parsedUser: { password: string; username: string;
 
 export const getUserService = async () => {
     
-    return selectAllUsers();
+    return dao.selectAllUsers();
 }
 
 export const changeUsername = (id : string, newUsername : string | undefined) => {
-    UpdateUsername(id, newUsername);
+    dao.UpdateUsername(id, newUsername);
 }
 
 export const changePassword = (id : string, newPassword : string | undefined) => {
-    let hash_salt = saltHashPassword(newPassword);
-    UpdateUserPassword(id, hash_salt);
+    let hash_salt = saltHashPassword(newPassword, currentServerSalt);
+    dao.UpdateUserPassword(id, hash_salt);
 
 }
 
-export const getSpecificUserService = async (id : string) => {
-    return selectUser(id);
+export const getSpecificUserId = async (id : string) => {
+    return dao.selectUserById(id);
 }
 
-export const deleteUserService = async (id : string) => {
-    return deleteUser(id);
+export const deleteUser = async (id : string) => {
+    return dao.deleteUser(id);
+}
+
+export const getSpecificUserEmail = async (email : string) => {
+    return await dao.selectUserByEmail(email);
 }

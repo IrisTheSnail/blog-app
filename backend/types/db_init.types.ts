@@ -1,4 +1,4 @@
-export default interface db_init {
+export default interface dbConfig {
     user: string,
     host: string,
     database: string,

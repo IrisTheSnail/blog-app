@@ -4,4 +4,5 @@ export default interface User {
     email: string ,
     hash : string ,
     salt : string ,	
+    accessToken ?: string 
 }

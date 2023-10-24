@@ -1,0 +1,144 @@
+
+(audacity:35449): Gtk-WARNING **: 23:05:51.799: A floating object was finalized. This means that someone
+called g_object_unref() on an object that had only a floating
+reference; the initial floating reference is not owned by anyone
+and must be removed with g_object_ref_sink().
+ALSA lib pcm_dsnoop.c:601:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1032:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+Cannot connect to server socket err = No such file or directory
+Cannot connect to server request channel
+jack server is not running or cannot be started
+JackShmReadWritePtr::~JackShmReadWritePtr - Init not done for -1, skipping unlock
+JackShmReadWritePtr::~JackShmReadWritePtr - Init not done for -1, skipping unlock
+Cannot connect to server socket err = No such file or directory
+Cannot connect to server request channel
+jack server is not running or cannot be started
+JackShmReadWritePtr::~JackShmReadWritePtr - Init not done for -1, skipping unlock
+JackShmReadWritePtr::~JackShmReadWritePtr - Init not done for -1, skipping unlock
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib confmisc.c:160:(snd_config_get_card) Invalid field card
+ALSA lib pcm_usb_stream.c:482:(_snd_pcm_usb_stream_open) Invalid card 'card'
+ALSA lib confmisc.c:160:(snd_config_get_card) Invalid field card
+ALSA lib pcm_usb_stream.c:482:(_snd_pcm_usb_stream_open) Invalid card 'card'
+ALSA lib pcm_dmix.c:1032:(snd_pcm_dmix_open) unable to open slave
+Cannot connect to server socket err = No such file or directory
+Cannot connect to server request channel
+jack server is not running or cannot be started
+JackShmReadWritePtr::~JackShmReadWritePtr - Init not done for -1, skipping unlock
+JackShmReadWritePtr::~JackShmReadWritePtr - Init not done for -1, skipping unlock
+23:05:56: Debug: DirManager: Created new instance.
+23:05:56: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:56: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:56: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:56: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:56: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:56: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:56: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:56: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:56: Debug: ScreenToClient cannot work when toplevel window is not shown
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2839
+23:05:57: Debug: PortAudio stream error creating device list: ALSA:HDA Intel PCH: ALC3235 Analog (hw:1,0): Device unavailable
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: Warning: command doesn't exist: 'Cut'
+23:05:57: Debug: Warning: command doesn't exist: 'Copy'
+23:05:57: Debug: Warning: command doesn't exist: 'Paste'
+23:05:57: Debug: Warning: command doesn't exist: 'Trim'
+23:05:57: Debug: Warning: command doesn't exist: 'Silence'
+23:05:57: Debug: Warning: command doesn't exist: 'Undo'
+23:05:57: Debug: Warning: command doesn't exist: 'Redo'
+23:05:57: Debug: Warning: command doesn't exist: 'ZoomIn'
+23:05:57: Debug: Warning: command doesn't exist: 'ZoomOut'
+23:05:57: Debug: Warning: command doesn't exist: 'ZoomToggle'
+23:05:57: Debug: Warning: command doesn't exist: 'ZoomSel'
+23:05:57: Debug: Warning: command doesn't exist: 'FitInWindow'
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ScreenToClient cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: Warning: command doesn't exist: 'Cut'
+23:05:57: Debug: Warning: command doesn't exist: 'Copy'
+23:05:57: Debug: Warning: command doesn't exist: 'Paste'
+23:05:57: Debug: Warning: command doesn't exist: 'Trim'
+23:05:57: Debug: Warning: command doesn't exist: 'Silence'
+23:05:57: Debug: Warning: command doesn't exist: 'Undo'
+23:05:57: Debug: Warning: command doesn't exist: 'Redo'
+23:05:57: Debug: Warning: command doesn't exist: 'ZoomIn'
+23:05:57: Debug: Warning: command doesn't exist: 'ZoomOut'
+23:05:57: Debug: Warning: command doesn't exist: 'ZoomToggle'
+23:05:57: Debug: Warning: command doesn't exist: 'ZoomSel'
+23:05:57: Debug: Warning: command doesn't exist: 'FitInWindow'
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: ClientToScreen cannot work when toplevel window is not shown
+23:05:57: Debug: Unrecognized accel key 'backspace', accel string ignored.
+23:05:57: Debug: Unrecognized accel key 'backspace', accel string ignored.
+23:05:57: Debug: Unrecognized accel key 'numpad_enter', accel string ignored.
+23:05:57: Debug: Unrecognized accel key 'numpad_enter', accel string ignored.
